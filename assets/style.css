@@ -80,6 +80,8 @@ a {
 
 .motto {
     text-align: center;
+    background-color: black;
+    height: 300px;
 }
 
 .motto img {
@@ -90,12 +92,14 @@ a {
 .motto-img {
     position: absolute;
     width: 100%;
+    opacity: .8;
 }
 
 .motto-text {
     position: relative;
     top: 150px;
     font-size: 20px;
+    color: white;
 }
 
 .about-us {
