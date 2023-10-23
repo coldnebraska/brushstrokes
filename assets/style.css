@@ -38,10 +38,7 @@ a {
     align-items: center;
     text-align: center;
     margin: 0 50px;
-}
-
-.hero h1 {
-    font-size: 300%;
+    font-size: 225%;
 }
 
 .hero img {
@@ -51,13 +48,10 @@ a {
 
 #services {
     margin: 0 160px;
-}
-
-#services h2 {
     text-align: center;
 }
 
-.all-cards {
+.card-container {
     display: flex;
     flex-wrap: wrap;
 }
@@ -81,32 +75,9 @@ a {
     width: 50%;
 }
 
-.img-text {
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
-}
-
-.motto {
-    text-align: center;
-    height: 300px;
-}
-
 .motto img {
     width: 100%;
     height: 300px;
-}
-
-.motto-text {
-    position: relative;
-    top: 150px;
-    font-size: 20px;
-    color: white;
-}
-
-.service-container {
-    display: flex;
-    justify-content: space-between;
 }
 
 .services-header {
@@ -123,9 +94,15 @@ a {
 .services-motto {
     width: 90%;
     margin: 20px auto;
+    font-size: 110%;
 }
 
-.service-cards {
+.service-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.our-service-cards {
     flex: 2;
     display: flex;
     flex-direction: column;
