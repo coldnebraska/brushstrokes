@@ -4,8 +4,8 @@ body {
 
 header {
     display: flex;
-    justify-content: space-around;
-    padding: 5px;
+    justify-content: space-between;
+    margin: 0 50px;
 }
 
 header img {
@@ -25,7 +25,7 @@ nav li {
     display: inline;
     width: fit-content;
     list-style: none;
-    padding: 5px;
+    padding: 0 25px;
     float: right;
 }
 
@@ -33,36 +33,52 @@ a {
     text-decoration: none;
 }
 
-.header-img {
-    height: 100px;
-    background-image: linear-gradient(to right, green, blue);
+.hero {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0 50px;
 }
 
-.services h2 {
+.hero h1 {
+    font-size: 300%;
+}
+
+.hero img {
+    width: 75%;
+    margin-bottom: 50px;
+}
+
+#services {
+    margin: 0 160px;
+}
+
+#services h2 {
     text-align: center;
 }
 
 .all-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
 }
 
 .card-border {
-    width: 22%;
+    width: 30%;
+    height: 85px;
+    margin: auto;
     border: 2px solid black;
-    border-radius: 10px;
-    margin-bottom: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
 }
 
-.card {
-    position: relative;
-    text-align: center;
-    background-color: black;
+.card-large h2 {
+    margin: auto;
 }
+
 .card h2 {
-    margin: 0;
-    color: white;
+    margin: auto;
+    padding: 15px 0;
+    width: 50%;
 }
 
 .img-text {
@@ -71,28 +87,14 @@ a {
     width: 100%;
 }
 
-.card img {
-    width: 100%;
-    height: 250px;
-    opacity: .75;
-    filter: blur(1px);
-}
-
 .motto {
     text-align: center;
-    background-color: black;
     height: 300px;
 }
 
 .motto img {
     width: 100%;
     height: 300px;
-}
-
-.motto-img {
-    position: absolute;
-    width: 100%;
-    opacity: .8;
 }
 
 .motto-text {
@@ -102,6 +104,96 @@ a {
     color: white;
 }
 
-.about-us {
-    text-align: center;
+.service-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-header {
+    margin: auto;
+    width: 90%;
+    border-bottom: 3px solid rgb(233, 233, 233);
+}
+
+.services-header h1 {
+    font-size: 250%;
+    margin-bottom: 15px;
+}
+
+.services-motto {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.service-cards {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+
+.service-card {
+    display: flex;
+    align-items: center;
+    height: 165px;
+    background-color: rgb(233, 233, 233);
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.service-card img {
+    margin-left: 10px;
+    width: 150px;
+    border-radius: 15px;
+}
+
+.card-content h2 {
+    margin: 10px 0 15px 15px;
+}
+
+.card-content p {
+    margin: 15px;
+}
+
+.offer {
+    flex: 1;
+    height: fit-content;
+    margin-left: 20px;
+    margin-right: 5%;
+    padding: 0 10px;
+    background-color: rgb(233, 233, 233);
+    border-radius: 15px;
+}
+
+.divider {
+    width: 90%;
+    margin: auto;
+    border-bottom: 3px solid rgb(233, 233, 233);
+    margin-bottom: 20px;
+}
+
+#about-us {
+    margin: auto;
+}
+
+#about-us h1 {
+    font-size: 250%;
+}
+
+.about-us-section {
+    width: 90%;
+    height: 240px;
+    margin: auto;
+    padding-top: 20px;
+    display: flex;
+    font-size: 125%;
+}
+
+.about-us-section img {
+    margin-bottom: 20px;
+}
+
+.about-us-content {
+    margin-left: 20px;
+    height: fit-content;
 }
