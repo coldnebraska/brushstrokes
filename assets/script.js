@@ -32,4 +32,4 @@ const handleSubmit = (event) => {
     .catch((error) => alert(error));
 };
 
-document.querySelector("form").addEventListener("submit", handleSubmit);
+submitBtn.click(handleSubmit);
