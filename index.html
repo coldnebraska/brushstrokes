@@ -167,18 +167,18 @@
     <div class="modal-contact-form" id="modal">
         <div class="modal-content">
             <h1>Contact Us<span class="close">&times;</span></h1>
-            <form>
+            <form name="Contact" method="POST" data-netlify="true" onsubmit="return false">
                 <div class="form-group short">
                     <label for="inputName">Name:</label>
-                    <input type="name" id="inputName" placeholder="Enter name">
+                    <input type="name" id="inputName" placeholder="Enter name" name="Name" required>
                 </div>
                 <div class="form-group short">
                     <label for="inputEmail">Email:</label>
-                    <input type="email" id="inputEmail" placeholder="Enter email">
+                    <input type="email" id="inputEmail" placeholder="Enter email" name="Email" required>
                 </div>
                 <div class="form-group">
                     <label for="inputMessage">Message:</label>
-                    <textarea class="form-control" id="inputMessage"></textarea>
+                    <textarea class="form-control" id="inputMessage" name="Message" required></textarea>
                 </div>
                 <button type="submit" class="submit-btn">Send</button>
             </form>
