@@ -30,5 +30,8 @@ const handleSubmit = (event) => {
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(formData).toString(),
     })
-    .catch((error) => alert(error));
+    .catch((error) => alert(error))
+    .then(function() {
+        modal.css("display", "none")
+    })
 };
