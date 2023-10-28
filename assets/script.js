@@ -21,10 +21,10 @@ window.addEventListener("click", function(event) {
 
 const handleSubmit = (event) => {
     event.preventDefault();
-
-    const myForm = event.target;
+    
+    const myForm = $("form")[0];
     const formData = new FormData(myForm);
-
+    
     fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
