@@ -6,6 +6,7 @@ let submitBtn = $(".submit-btn")
 
 modalBtn.click(function() {
     modal.css("display", "block")
+    submitBtn.click(handleSubmit);
 })
 
 close.click(function() {
@@ -31,5 +32,3 @@ const handleSubmit = (event) => {
     })
     .catch((error) => alert(error));
 };
-
-submitBtn.click(handleSubmit);
