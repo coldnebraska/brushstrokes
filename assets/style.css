@@ -9,13 +9,17 @@ header {
 }
 
 header img {
-    width: 300px;
+    width: 400px;
 }
 
 header nav {
     display: flex;
     align-items: center;
     gap: 25px;
+}
+
+header nav a {
+    font-weight: bold;
 }
 
 .btn {
@@ -26,42 +30,54 @@ header nav {
     box-shadow: 1px 1px 5px #888;
 }
 
+#nav-btn {
+    color: white;
+}
+
 a {
     text-decoration: none;
 }
 
 .hero {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 50px;
     text-align: center;
-    margin: 0 50px;
     font-size: 225%;
+    margin-bottom: 100px;
+}
+
+.hero h1 {
+    width: fit-content;
 }
 
 .hero img {
-    width: 75%;
-    margin-bottom: 50px;
+    width: 200px;
 }
 
 #services {
-    margin: 0 20%;
+    margin: auto;
     text-align: center;
 }
 
 .card-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 45px;
+    margin-bottom: 45px;
 }
 
 .card-border {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 225px;
-    height: 225px;
-    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px grey;
+    background-color: rgb(233, 233, 233);
     overflow: hidden
 }
 
@@ -245,6 +261,31 @@ a {
     box-shadow: 1px 1px 5px #888;
 }
 
+@media screen and (max-width: 1450px) {
+    .card-container {
+        gap: 25px;
+    }
+    .services-card h2 {
+        font-size: 28px;
+    }
+    .card-border {
+        height: 175px;
+        width: 175px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+    #services {
+        margin: 0 10%;
+    }
+}
+
+
 @media screen and (max-width: 950px) {
     .service-container {
         flex-direction: column;
@@ -272,7 +313,10 @@ a {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
+    #nav-btn {
+        font-weight: bold;
+    }
     .about-us-section {
         align-items: center;
     }
@@ -282,11 +326,18 @@ a {
     .service-container h2 {
         font-size: 28px;
     }
+    .hero {
+        margin: 50px 0;
+    }
     .hero h1 {
         font-size: 28px;
     }
     #services h2 {
         font-size: 28px;
+    }
+    .card-container{
+        display: flex;
+        flex-wrap: wrap;
     }
     .card-border {
         height: 200px;
@@ -313,17 +364,20 @@ a {
         color: white;
         padding: 5px 0;
     }
+    .motto {
+        margin: 50px 5%;
+    }
     .motto img {
         height: 250px;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .hero {
-        margin: 0 20px;
-    }
     .hero h1 {
         font-size: 20px;
+    }
+    .hero img {
+        width: 150px;
     }
     #services h2 {
         font-size: 20px;
@@ -360,6 +414,13 @@ a {
 }
 
 @media screen and (max-width: 450px) {
+    .hero img {
+        display: none;
+    }
+    .hero h1 {
+        width: 100%;
+        font-size: 30px;
+    }
     header nav a {
         font-size: 12px;
     }
@@ -371,9 +432,6 @@ a {
     }
     .motto img {
         height: 150px;
-    }
-    .hero h1 {
-        font-size: 16px;
     }
     #our-services img {
         display: none;
@@ -390,6 +448,9 @@ a {
 }
 
 @media screen and (max-width: 375px) {
+    .hero h1 {
+        font-size: 24px;
+    }
     .motto img {
         height: 100px;
     }
