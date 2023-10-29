@@ -15,19 +15,7 @@ header img {
 header nav {
     display: flex;
     align-items: center;
-}
-
-nav ul {
-    display: flex;
-    align-items: center;
-}
-
-nav li {
-    display: inline;
-    width: fit-content;
-    list-style: none;
-    padding-left: 25px;
-    float: right;
+    gap: 25px;
 }
 
 .btn {
@@ -56,13 +44,14 @@ a {
 }
 
 #services {
-    margin: 0 160px;
+    margin: 0 20%;
     text-align: center;
 }
 
 .card-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 45px;
 }
 
@@ -70,13 +59,13 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30%;
-    height: 150px;
+    width: 225px;
+    height: 225px;
     border: 2px solid black;
     overflow: hidden
 }
 
-.card {
+.services-card {
     border: none;
     word-wrap: normal;
 }
@@ -122,14 +111,15 @@ a {
 .service-card {
     display: flex;
     align-items: center;
-    height: 165px;
     background-color: rgb(233, 233, 233);
     border-radius: 15px;
     margin-bottom: 20px;
+    box-shadow: 1px 1px 5px grey;
 }
 
 .service-card img {
     margin-left: 10px;
+    padding: 10px 0;
     width: 150px;
     border-radius: 15px;
 }
@@ -150,6 +140,7 @@ a {
     padding: 0 10px;
     background-color: rgb(233, 233, 233);
     border-radius: 15px;
+    box-shadow: 1px 1px 5px grey;
 }
 
 .contact-button {
@@ -174,7 +165,6 @@ a {
 
 .about-us-section {
     width: 90%;
-    height: 240px;
     margin: auto;
     padding-top: 20px;
     display: flex;
@@ -182,6 +172,7 @@ a {
 }
 
 .about-us-section img {
+    height: 240px;
     margin-bottom: 20px;
 }
 
@@ -252,4 +243,152 @@ a {
     border: none;
     outline: none;
     box-shadow: 1px 1px 5px #888;
+}
+
+@media screen and (max-width: 950px) {
+    .service-container {
+        flex-direction: column;
+    }
+    .our-service-cards{
+        margin-right: 5%;
+    }
+    .offer {
+        margin: 0 5% 20px 5%;
+    }
+    .offer h1 {
+        text-align: center;
+    }
+    .contact-button {
+        padding-top: 0;
+    }
+    #about-us {
+        margin-top: 50px;
+    }
+    #services {
+        margin: 0 5%;
+    }
+    .about-us-content {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .about-us-section {
+        align-items: center;
+    }
+    .service-container h1 {
+        font-size: 32px;
+    }
+    .service-container h2 {
+        font-size: 28px;
+    }
+    .hero h1 {
+        font-size: 28px;
+    }
+    #services h2 {
+        font-size: 28px;
+    }
+    .card-border {
+        height: 200px;
+        width: 200px;
+    }
+    #float-button {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .motto img {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header nav {
+        display: none;
+    }
+    .hero {
+        margin: 0 20px;
+    }
+    .hero h1 {
+        font-size: 20px;
+    }
+    #services h2 {
+        font-size: 20px;
+    }
+    .card-container {
+        gap: 20px;
+    }
+    .card-border {
+        width: 150px;
+        height: 150px;
+    }
+    .motto img {
+        height: 200px;
+    }
+    .services-header h1 {
+        font-size: 28px;
+    }
+    .services-motto p {
+        font-size: 16px;
+    }
+    .service-container h2 {
+        font-size: 24px;
+    }
+    .offer h1 {
+        font-size: 24px;
+        padding-top: 10px;
+    }
+    .about-us-section {
+        flex-direction: column;
+    }
+    #about-us h1 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .motto {
+        margin: 30px 5%;
+    }
+    .motto img {
+        height: 150px;
+    }
+    .hero h1 {
+        font-size: 16px;
+    }
+    #our-services img {
+        display: none;
+    }
+    .service-container h2 {
+        text-align: center;
+    }
+    .card-content {
+        width: 100%;
+    }
+    #about-us {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .motto img {
+        height: 100px;
+    }
+    .card-border {
+        height: 100px;
+        width: 100px;
+    }
+    #services h2 {
+        font-size: 14px;
+    }
+    #our-services p {
+        font-size: 14px;
+    }
+    .about-us-content {
+        font-size: 12px;
+    }
 }
