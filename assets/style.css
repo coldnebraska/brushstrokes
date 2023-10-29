@@ -292,14 +292,26 @@ a {
         height: 200px;
         width: 200px;
     }
-    #float-button {
-        position: absolute;
-        right: 20px;
-        top: 20px;
+    #nav-btn {
+        color: white;
+        background-color: rgb(0, 191, 0);
+        box-shadow: none;
+        padding: 10px 0;
     }
     header {
         flex-direction: column;
         align-items: center;
+        margin: 0;
+    }
+    header nav {
+        background-color: rgb(0, 191, 0);
+        justify-content: center;
+        gap: 35px;
+        width: 100%;
+    }
+    header nav a {
+        color: white;
+        padding: 5px 0;
     }
     .motto img {
         height: 250px;
@@ -307,9 +319,6 @@ a {
 }
 
 @media screen and (max-width: 600px) {
-    header nav {
-        display: none;
-    }
     .hero {
         margin: 0 20px;
     }
@@ -351,6 +360,12 @@ a {
 }
 
 @media screen and (max-width: 450px) {
+    header nav a {
+        font-size: 12px;
+    }
+    #nav-btn {
+        font-size: 12px;
+    }
     .motto {
         margin: 30px 5%;
     }
